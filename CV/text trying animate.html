@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/* animation reverse  */
+        .about_me{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 800px;
+        }
+        p{
+            font-size: 16px;
+            margin: 5px;
+        }
+        .about_me p,span{
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+            animation: flip 2s infinite;
+            animation-delay: calc(.2s * var(--i))
+          }
+          @keyframes flip {
+            0%,80% {
+              transform: rotateY(360deg) 
+            }
+          }
+          /*  */</style>
+</head>
+<body>
+    <span style="--i:1">С</span>
+    <span style="--i:2">л</span>
+    <span style="--i:3">і</span>
+    <span style="--i:4">д</span>
+</body>
+</html>

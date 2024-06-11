@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+    <base target="_blank">
+    <link rel="stylesheet" href="./css/style_js.css"><!-- підключення css файлу -->
+</head>
+<body>
+    <header>
+        <h1>Java Script</h1>
+    </header>
+    <main> 
+        <!-- <div class='lab' style="display: none;"> 
+            <textarea id="text-input"></textarea><br>
+
+            <button onclick="toggleBold()" class='glowing-btn'>Товстий</button>
+            <button onclick="toggleItalic()" class='glowing-btn'>Курсив</button>
+            <button onclick="toggleUnderline()" class='glowing-btn'>Підкреслити</button>
+
+            <select id="font-size" class='glowing-btn'>
+                <option value="20px">20</option>
+                <option value="30px">30</option>
+                <option value="40px">40</option>
+                <option value="50px">50</option>
+            </select>
+
+            <input type="color" id="font-color" class="input-color"><br>
+
+            <button onclick="alignLeft()" class='glowing-btn'>По лівому краю</button>
+            <button onclick="alignCenter()" class='glowing-btn'>По центру</button>
+            <button onclick="alignRight()" class='glowing-btn'>По правому краю</button><br>
+
+            <button onclick="clearText()" class='glowing-btn'>Очистити текст</button>
+            <button onclick="animateText()" class='glowing-btn'>Анімація тексту</button>
+        </div> -->
+        
+        <!-- Car elements -->
+        <h2>Виберіть авто для порівняння: </h2>
+        <div class="crs">
+        <div class="car" id="car1" data-car="car1">
+            <img src="./img/toyota.jpg" class="car_img" alt="Car 1">
+            <ul>
+                <li>Бренд: Toyota</li>
+                <li>Модель: Camry</li>
+                <li>Рік випуску: 2018</li>
+                <li>Пробіг: 50000 км</li>
+                <li>Максимальна швидкість: 220 км/год</li>
+                <li>Витрати пального: 7.5 л /100км</li>
+            </ul>
+        </div>
+
+        <div class="car" id="car2" data-car="car2">
+            <img src="./img/Honda-Civic.png" class="car_img" alt="Car 2">
+            <ul>
+                <li>Бренд: Honda</li>
+                <li>Модель: Civic</li>
+                <li>Рік випуску: 2019</li>
+                <li>Пробіг: 40000 км</li>
+                <li>Максимальна швидкість: 210 км/год</li>
+                <li>Витрати пального: 7.0 л /100км</li>
+            </ul>
+        </div>
+
+        <div class="car" id="car3" data-car="car3">
+          <img src="./img/ford-focus.jpg" class="car_img" alt="Car 3">
+          <ul>
+              <li>Бренд: Ford</li>
+              <li>Модель: Focus</li>
+              <li>Рік випуску: 2020</li>
+              <li>Пробіг: 30000 км</li>
+              <li>Максимальна швидкість: 200 км/год</li>
+              <li>Витрати пального: 6.5 л /100км</li>
+          </ul>
+      </div>
+
+      <div class="car" id="car4" data-car="car4">
+        <img src="./img/bmw-3-series.png" class="car_img" alt="Car 4">
+        <ul>
+            <li>Бренд: BMW</li>
+            <li>Модель: 3 Series</li>
+            <li>Рік випуску: 2017</li>
+            <li>Пробіг: 60000 км</li>
+            <li>Максимальна швидкість: 240 км/год</li>
+            <li>Витрати пального: 8.0 л /100км</li>
+        </ul>
+    </div>
+    </div>
+
+    <div class="comparison" id="comparison-results"><h2>Поле порівняння</h2></div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Something~. Усі права захищені.</p>
+    </footer>
+    <!-- підключення js -->
+    <script src="js/lab4.js"></script>
+</body>
+</html>

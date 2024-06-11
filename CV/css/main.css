@@ -1,0 +1,199 @@
+/* @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+font-family: "Roboto", helvetica, arial, sans-serif; */
+*{
+    font-family:century-gothic;
+    
+}
+body{
+    margin: auto; /* по центру */
+    display: flex;
+    flex-direction: column;
+    width: 950px;
+    height: 993px;
+    /*background-image: url("../img/stars-50.png");
+    background-size:contain;*/
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(117,152,152,1) 35%, rgba(11,55,66,1) 100%);
+}
+header{
+    display: flex;
+    /*justify-content: center;*/
+    flex-direction: row;
+    width: auto;
+    height: 230px;
+    background-color: #0b3742;/* background-color: #0b3742; */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+aside{
+    width: 255px;
+    height: 930px;
+    background-color: #759898;
+    margin-left: 33px;
+}
+main{
+    display: flex;
+    background-color: #ffffff;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+footer{
+    color:white;
+    margin: auto;
+}
+h1{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    width: 170px;
+    text-transform: uppercase;
+    margin-left: 44px;
+    color:rgb(255, 255, 255);
+} /* */
+.img {
+    width: fit-content;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    margin: 5px;
+    background-color: #bda79d;
+}
+.foto{
+    width: 255px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    background-color: #759898;
+    margin-left: 33px;
+}
+img{
+    width: 220px;
+    height: 220px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+}
+.about_me{
+    padding: 20px;
+    color: #ffffff;
+}
+.page{
+    padding: 20px;
+}
+/* 
+.language {
+    color: #759898;
+    font-weight: bold;
+    font-style: italic;
+}
+.project-title {
+    font-weight: bold;
+} */
+.project-description {
+    margin-bottom: 10px;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.Contacts{
+    display: flex;
+}
+h3{
+    margin: 2px;
+}
+/* table, th, td {
+    border: 1px solid #759898;
+    height: fit-content;
+    margin-left: 44px;
+    border: 2px solid #759898;
+} */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #759898;
+    color: #ffffff;
+    text-align: left;
+}
+/* падінги  */
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+/* білий-сірий рядки */
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #759898;
+}
+/* ----- */
+/* активна  */
+.styled-table tbody tr.active-row {
+    font-weight:lighter;
+    color: black;
+}
+.styled-table tbody tr:hover{
+    background-color:#759898;
+}
+/* ---- */
+.green{
+    border: 1px solid #759898;
+}
+.tble{
+    position: absolute;
+    bottom: 40%;
+    right: 26%;
+} /* */
+
+/* button  */
+.button-s {
+    background: #759898;
+    border: 1px solid #759898;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+  .button-s:hover,
+  .button-s:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #759898;
+  }
+  
+  .button-s:active {
+    opacity: .5;
+  }

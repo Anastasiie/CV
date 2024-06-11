@@ -1,0 +1,386 @@
+body{
+    background-color: #f4f6c4;
+}
+header, footer{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color: #dddeaf;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px auto;
+}
+main{
+    width: 95%;
+    /* height: 980px; */
+    margin: auto; /* Центр*/
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+h1{
+    background-color: #dddeaf;
+}
+/*h2{
+     background-color:white; 
+    font-size: 32px;
+}*/
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 18px;
+    /* resize: none; */
+}
+.input-color{
+    width: 112px;
+    height: 53px;
+    margin: 5px;
+    padding: 7px;
+    border: 1px solid #707633;
+    border-radius: 0.45em;
+}
+button, select{
+    font-size: 25px;
+}
+#text-input {
+    width: 700px;
+    height: 100px;
+}
+.lab{
+    background-color: white;
+}
+tr{
+    font-size: 28px;
+}
+
+.tble{
+    margin: 5px;
+    padding: 10px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+}
+/* table */
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #dddeaf;
+    color: #ffffff;
+    text-align: left;
+}
+/* падінги  */
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+/* білий-сірий рядки */
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #dddeaf;
+}
+/* ----- */
+/* активна  */
+.styled-table tbody tr.active-row {
+    font-weight:lighter;
+    color: black;
+}
+.styled-table tbody tr:hover{
+    background-color:#dddeaf;
+    color:white;
+}
+/* table end */
+/* buttons */
+:root {
+    --glow-color: #b1b28b;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+.glowing-btn {
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    margin: 5px;
+    padding: 0.35em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+  
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+      0px 0px 0.5em 0px var(--glow-color);
+    animation: border-flicker 5s linear infinite;
+  }
+
+.animated-text {
+    animation: border-flicker 3s linear infinite;
+}
+
+  .glowing-txt {
+    float: left;
+    margin-right: -0.8em;
+    -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+      0 0 0.45em var(--glow-color);
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+    animation: text-flicker 3s linear infinite;
+  }
+  
+  .faulty-letter {
+    opacity: 0.5;
+    animation: faulty-flicker 2s linear infinite;
+  }
+  
+  .glowing-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    /* background: var(--glow-color); */
+    pointer-events: none;
+  }
+  
+  .glowing-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+  }
+  
+  .glowing-btn:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+  }
+  
+  .glowing-btn:hover .glowing-txt {
+    animation: none;
+  }
+  
+  .glowing-btn:hover .faulty-letter {
+    animation: none;
+    text-shadow: none;
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:before {
+    filter: blur(1.5em);
+    opacity: 1;
+  }
+  
+  .glowing-btn:hover:after {
+    opacity: 1;
+  }
+  
+  @keyframes faulty-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 0.1;
+    }
+    4% {
+      opacity: 0.5;
+    }
+    19% {
+      opacity: 0.5;
+    }
+    21% {
+      opacity: 0.1;
+    }
+    23% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.5;
+    }
+    83% {
+      opacity: 0.4;
+    }
+  
+    87% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes text-flicker {
+    0% {
+      opacity: 0.1;
+    }
+  
+    2% {
+      opacity: 1;
+    }
+  
+    8% {
+      opacity: 0.1;
+    }
+  
+    9% {
+      opacity: 1;
+    }
+  
+    12% {
+      opacity: 0.1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0.3;
+    }
+    30% {
+      opacity: 1;
+    }
+  
+    70% {
+      opacity: 0.7;
+    }
+    72% {
+      opacity: 0.2;
+    }
+  
+    77% {
+      opacity: 0.9;
+    }
+    100% {
+      opacity: 0.9;
+    }
+  }
+  
+  @keyframes border-flicker {
+    0% {
+      opacity: 0.1;
+    }
+    2% {
+      opacity: 1;
+    }
+    4% {
+      opacity: 0.1;
+    }
+  
+    8% {
+      opacity: 1;
+    }
+    70% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+/*  */
+
+/* Cars */
+*{
+  font-size: 20px;
+}
+h2 {
+  background-color: transparent;
+  font-size: 32px;
+  flex-basis: 100%;
+  text-align: center;
+}
+ .car {
+  display: inline-block;
+  width: 23%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 25px;
+}
+.car.active {
+  border-color: blue;
+}
+.comparison{
+  width: 100%;
+  text-align: center;
+}
+.car_img {
+  width: 100%;
+  height: 340px;
+  object-fit: contain;
+}
+
+.car ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.car li {
+  margin-bottom: 5px;
+}
+
+/* Comparison Results */
+#comparison-results {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#comparison-results h2 {
+  margin-top: 0;
+}
+
+#comparison-results p {
+  margin-bottom: 10px;
+}
+.car.selected {
+  border-color: blue; /* колір, для виділення */
+  transform: scale(1.05); /* збільшення на 5% */
+}
+
+/* Add any additional styles for better appearance */

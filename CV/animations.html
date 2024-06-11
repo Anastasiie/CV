@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation page</title>
+    <base target="_blank">
+    <link rel="stylesheet" href="./css/page2.css"><!-- підключення css файлу -->
+</head>
+<body>
+    <!-- Шапка сайту -->
+    <header>   
+    </header>
+    <main>
+        <ul>
+            <li>
+                <div class="dimg">
+                    <img class="img" src="./img/meah2.png" alt="Персональне фото" >
+                </div>
+            </li>
+            <li><a href="/">Головна</a></li>
+            <li class="active"><a href="animations.html">Деталі</a></li>
+            <li><a href="#">Контакти</a></li>
+            <li><a href="#">Команда</a></li>
+        </ul>
+        <article>
+            <!-- name -->
+            <section class="foto">
+                <h1>
+                    <span style="--i:1">А</span>
+                    <span style="--i:2">н</span>
+                    <span style="--i:3">а</span>
+                    <span style="--i:4">c</span>
+                    <span style="--i:5">т</span>
+                    <span style="--i:6">а</span>
+                    <span style="--i:7">с</span>
+                    <span style="--i:8">і</span>
+                    <span style="--i:9">я</span>
+                    <p> </p>    
+                    <span style="--i:1">Щ</span>
+                    <span style="--i:2">е</span>
+                    <span style="--i:3">г</span>
+                    <span style="--i:4">о</span>
+                    <span style="--i:5">л</span>
+                    <span style="--i:6">ь</span>
+                </h1> 
+            </section>
+            <section class="row">
+                <!-- table -->
+                <div class="tble">
+                    <h3>Навчання</h3>
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>№</th>
+                                <th>Навчальний заклад</th>
+                                <th>Рік</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Спеціалізована школа №244</td>
+                                <td>2010 - 2014</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Навчально-виховний комплекс "Школа I ступеня - гімназія "Оболонь" "</td>
+                                <td>2014 - 2019</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>ВСП "КФКМРФТТ ДУІТ"</td>
+                                <td>2019 - 2023</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>4</td>
+                                <td>Український державний університет імені Михайла Драгоманова</td>
+                                <td>2023 - 2025</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- text -->
+                <div class="about_me">
+                    <div class="containr">
+                        <h2 class="title">
+                          <span class="title-word title-word-1">Існую щасливою за замовчуванням, будь ласка,</span><p> </p><span class="title-word title-word-4">не чіпайте налаштування;</span>
+                          <span class="title-word title-word-2">Я все легко запам'ятовую, але згадати після не можу;</span>
+                          <span class="title-word title-word-3">З роками я роблю все менше помилок, але їх якість, безсумнівно, зростає.</span>
+                        </h2>
+                    </div>
+                </div>
+            </section>
+            <!-- carousel -->
+            <section>
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                        <div class="carousel-item">
+                            <img src="/img/fluorescent-frame-leaves.webp">
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item">
+                            <img src="/img/leaves.webp">
+                        </div>
+                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                        <div class="carousel-item">
+                            <img src="/img/fioletovii.jpg">
+                        </div>
+                        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+                        <label for="carousel-2" class="carousel-control next control-1">›</label>
+                        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+                        <label for="carousel-3" class="carousel-control next control-2">›</label>
+                        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+                        <label for="carousel-1" class="carousel-control next control-3">›</label>
+                        <ol class="carousel-indicators">
+                            <li>
+                                <label for="carousel-1" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-2" class="carousel-bullet">•</label>
+                            </li>
+                            <li>
+                                <label for="carousel-3" class="carousel-bullet">•</label>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+            <!-- form -->
+            <section>
+                <div class="container">
+                    <div class="text">
+                        Зворотній зв’язок
+                    </div>
+                    <form action="#">
+                       <div class="form-row">
+                          <div class="input-data">
+                             <input type="text" required>
+                             <div class="underline"></div>
+                             <label for="">Нікнейм</label>
+                          </div>
+                          <div class="input-data">
+                             <input type="email" required>
+                             <div class="underline"></div>
+                             <label for="">Ел.пошта</label>
+                          </div>
+                       </div>
+                       <div class="form-row">
+                        <div class="input-data textarea">
+                            <textarea rows="8" cols="80" required></textarea>
+                            <br />
+                            <div class="underline"></div>
+                            <label for="">Напишіть повідомлення</label>
+                        </div>
+                       </div>
+                       <button type="button" class="neon-button">O<span>k</span></button>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </main>
+    
+    <!-- Підвал -->
+    <footer>
+        <div class="f">
+            <p class="flwm">
+                <span style="--i:1">С</span>
+                <span style="--i:2">л</span>
+                <span style="--i:3">і</span>
+                <span style="--i:4">д</span>
+                <span style="--i:5">к</span>
+                <span style="--i:6">у</span>
+                <span style="--i:7">й</span>
+            </p>
+            <div>
+                <img class="giff" src="/img/facebook.gif" alt="fb">
+                <img class="giff" src="/img/instagram.gif" alt="inst">
+                <img class="giff" src="/img/twitter-30.png" alt="tw">
+            </div>
+        </div>
+        <!-- <div class="plus">
+            <img src="/img/plus-50.png" alt="Плюс">
+        </div> -->
+        <p class="rights"> ©Ana sta siie 2023-2024. Усі права захищено.</p>
+    </footer>
+</body>
+</html>

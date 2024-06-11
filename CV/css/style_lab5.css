@@ -1,0 +1,66 @@
+body{
+    background-color: #cdf6c4;
+    margin: 0;
+}
+header, footer{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color: #b5deaf;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px 0;
+    margin: 2% auto; /* 20px */
+}
+main{
+    width: 90%;
+    /* height: 980px; */
+    margin: 2% auto; /* Центр*/
+    /* margin-top: 20px; */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* body {
+    font-family: Arial, sans-serif;
+} */
+.days_of_the_week{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+}
+.dayOfWeek { /* дні неділі  */
+    text-align: center;
+    font-size: 20px;
+}
+h1{
+    text-align: center;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 5px;
+}
+
+.day {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+/* скорочена мітка */
+.sticker {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid green;
+    cursor: pointer;
+    max-width: 100%; /* Обмежити максимальну ширину мітки до 100% */
+    max-height: 100px; /* Обмежити максимальну висоту мітки */
+    overflow-y: auto; /* Додати вертикальний скролінг, якщо текст вийшов за межі */
+    overflow-wrap: break-word; /* Автоматичне перенесення тексту на наступний рядок */
+}
